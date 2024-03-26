@@ -54,7 +54,7 @@ predefined_origin_options = [
 
 # Main program
 travellah = TravellahMethod()
-origin, destination, num_travelers, duration, budget_level = travellah.get_user_input() 
+origin, destination, num_travelers, duration, budget_level = travellah.get_user_input(self,client) 
 
 response = client.chat.completions.create(
     model='gpt-3.5-turbo',
