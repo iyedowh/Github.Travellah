@@ -52,6 +52,7 @@ predefined_origin_options = [
     "Argentina", "South Korea", "Hungary", "Philippines", "Costa Rica"
 ]  
 
+client = "example_client"
 # Main program
 travellah = TravellahMethod()
 origin, destination, num_travelers, duration, budget_level = travellah.get_user_input(client) 
