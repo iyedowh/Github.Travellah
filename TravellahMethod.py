@@ -12,10 +12,11 @@ class TravellahMethod:
 
         while True:
             origin = input("Enter origin city or country (or leave blank for predefined options): ")
-            if origin or len(predefined_origin_options) > 0:
-                break
-            print("Please enter a valid origin or choose from predefined options (if available).")
-
+            if origin.strip() == "":
+            print("Using predefined options for origin.")
+            else:
+            print("Origin city or country entered:", origin) 
+  
         while True:
             destination = input("Enter destination city or country: ")
             if destination:
