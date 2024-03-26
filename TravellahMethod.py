@@ -1,5 +1,7 @@
 class TravellahMethod:
-                      
+  
+    from enum import Enum  
+  
     class BudgetLevel(Enum):
         LOW = 1
         STANDARD = 2
