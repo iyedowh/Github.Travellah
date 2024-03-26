@@ -7,7 +7,7 @@ class TravellahMethod:
         STANDARD = 2
         HIGH = 3
 
-    def get_user_input(self,client):
+    def get_user_input(self, client):
         budget_level_options = list(self.BudgetLevel)
 
         while True:
