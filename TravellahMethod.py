@@ -1,9 +1,9 @@
 class TravellahMethod:
                       
     class BudgetLevel(Enum):
-        LOW = "Low"
-        STANDARD = "Standard"
-        HIGH = "High"
+        LOW = 1
+        STANDARD = 2
+        HIGH = 3
 
     def get_user_input(self,client):
         budget_level_options = list(self.BudgetLevel)
