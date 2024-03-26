@@ -1,5 +1,3 @@
-from enum import Enum
-
 class TravellahMethod:
                       
     class BudgetLevel(Enum):
