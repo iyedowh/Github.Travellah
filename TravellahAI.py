@@ -29,7 +29,7 @@ def main():
    
     if st.button("Estimate Budget"):
             total_expenses = (origin, destination, num_travellers, duration, budget_level)
-            st.write(f"Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: {total_expenses}")
+            st.write(f"Estimating overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level}. Let me calculate for you, please wait for a second.")
             output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
             st.write(output)
 
