@@ -12,12 +12,19 @@ def main():
 
     st.title("TRAVELLAH!")
 
-    origin, destination, num_travelers, duration, budget_level = tm.get_user_input(client)
+    origin = st.text_input('Origin')
+    destination = st.text_input('Destination')
+    num_travellers = st.text_input('Number of Travellers')
+    duration = st.text_input('Duration')
+    budget_level = st.selectbox(
+    'Budget Level?',
+    ('Low', 'Standard', 'High'))
+
 
     if st.button("Estimate Budget"):
-        total_expenses = (origin, destination, num_travelers, duration, budget_level)
-        st.write(f"Estimated overall budget for {num_travelers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
-        output= tm.main_program(client, origin, destination, num_travelers, duration, budget_level ) 
+        total_expenses = (origin, destination, num_travellers, duration, budget_level)
+        st.write(f"Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
+        output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
         st.write(output)
 
 if __name__ == "__main__":
