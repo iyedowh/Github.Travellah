@@ -61,21 +61,22 @@ class TravellahMethod:
         meals cost in user's origin currency, transportation cost in user's origin currency, activities cost in user's
         destination and user's origin currency, and overall estimated cost in user's origin currency. 
         You will describe all the costing in details and use Times New Roman font to describe the output.
-        Use this format for the output:
+
+        Use this format for the output accordingly and neatly:
 
         Estimated Budget for Traveling from KL, Malaysia to Phuket, Thailand for 3 Travelers for 4 Days
 
-        Flight Price: The flight ticket price from KL, Malaysia to Phuket, Thailand can be checked on Expedia. Let's assume the total cost for 3 travelers is approximately MYR 2,500.
+        - Flight Price: The flight ticket price from KL, Malaysia to Phuket, Thailand can be checked on Expedia. Let's assume the total cost for 3 travelers is approximately MYR 2,500.
 
-        Accommodations Cost: You can explore hotel prices on Booking.com. For a standard budget level, let's estimate the total cost for 3 travelers for 4 days to be around MYR 1,200.
+        - Accommodations Cost: You can explore hotel prices on Booking.com. For a standard budget level, let's estimate the total cost for 3 travelers for 4 days to be around MYR 1,200.
 
-        Meals Cost: The average cost of meals per day per person in Phuket is around MYR 50. For 3 travelers for 4 days, the total meals cost would be approximately MYR 600.
+        - Meals Cost: The average cost of meals per day per person in Phuket is around MYR 50. For 3 travelers for 4 days, the total meals cost would be approximately MYR 600.
 
-        Transportation Cost: The transportation cost within Phuket can vary based on the mode of transport chosen. Let's estimate the total transportation cost for 3 travelers for 4 days to be around MYR 300.
+        - Transportation Cost: The transportation cost within Phuket can vary based on the mode of transport chosen. Let's estimate the total transportation cost for 3 travelers for 4 days to be around MYR 300.
 
-        Activities Cost: You can explore activity options on ContinentHop. Let's estimate the total cost for activities for 3 travelers for 4 days to be around MYR 1,000.
+        - Activities Cost: You can explore activity options on ContinentHop. Let's estimate the total cost for activities for 3 travelers for 4 days to be around MYR 1,000.
 
-        Overall Estimated Cost: Adding up all the estimated costs:
+        - Overall Estimated Cost: Adding up all the estimated costs:
 
         Flight Price: MYR 2,500
         Accommodations Cost: MYR 1,200
