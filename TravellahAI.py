@@ -35,8 +35,5 @@ def main():
     st.write(f"- Total Estimate Budget: ${total_expenses}$")
 
 
-    output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
-    st.write(output)
-
 if __name__ == "__main__":
     main() 

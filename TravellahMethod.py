@@ -51,7 +51,7 @@ class TravellahMethod:
 
         response = client.chat.completions.create(
             model='gpt-3.5-turbo',
-            max_tokens=3000,
+            max_tokens=1000,
             temperature=0.5,
             messages= [
                 {
