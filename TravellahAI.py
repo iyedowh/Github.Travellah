@@ -10,10 +10,10 @@ client = OpenAI(
 
 def main():
 
-    col1, col2, col3 = st.columns([1, 4, 1])  # Adjust the column widths as needed
+    col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
-    with col2:
-        st.title(':purple[TRAVELLAH!]')
+    with col3:
+        st.title(':red[TRAVELLAH!]')
 
     origin = st.text_input('Origin')
     destination = st.text_input('Destination')
