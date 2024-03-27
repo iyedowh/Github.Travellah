@@ -13,14 +13,14 @@ def main():
     col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
     with col3:
-        
+
         st.markdown(
     "<h1 style='font-family: Rage Italic'>Travellah!</h1>",
     unsafe_allow_html=True
     )
 
-    origin = st.text_input('Origin')
-    destination = st.text_input('Destination')
+    origin = st.text_input('Origin (City,Country)')
+    destination = st.text_input('Destination (City,Country)')
     num_travellers = st.slider('Number of Travellers', min_value=1, max_value=30, value=1, step=1)
     duration = st.slider('Travel Durations (in days)', min_value=1, max_value=30, value=1, step=1)
     budget_level = st.selectbox(
