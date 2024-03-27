@@ -13,8 +13,7 @@ def main():
     col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
     with col3:
-        st.title(':dark[TRAVELLAH!]')
-
+        
         st.markdown(
     "<h1 style='font-family: Rage Italic'>Travellah!</h1>",
     unsafe_allow_html=True
