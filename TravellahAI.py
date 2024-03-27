@@ -25,10 +25,10 @@ def main():
      total_expenses = (origin, destination, num_travellers, duration, budget_level)
 
     st.markdown("## Estimated Budget Details")
-    
+
     st.write(f"**Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
     col1, col2 = st.columns(2)
-
+ 
     with col1:
             st.write("Travel Details:")
             st.write(f"- Origin: {origin}")
@@ -40,6 +40,9 @@ def main():
 
             st.write("Here is the breakdown of estimated budget:")
             st.write(f"Total Expenses: ${total_expenses}", unsafe_allow_html=True)
+
+    output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
+    st.write(output)
 
 if __name__ == "__main__":
     main() 
