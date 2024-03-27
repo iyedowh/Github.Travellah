@@ -76,14 +76,19 @@ class TravellahMethod:
 
         - Activities Cost: You can explore activity options on ContinentHop. Let's estimate the total cost for activities for 3 travelers for 4 days to be around MYR 1,000.
 
-        - Overall Estimated Cost: Adding up all the estimated costs:
+        - Adding up all the estimated costs:
 
-        Flight Price: MYR 2,500
-        Accommodations Cost: MYR 1,200
-        Meals Cost: MYR 600
-        Transportation Cost: MYR 300
-        Activities Cost: MYR 1,000
-        Total Estimated Cost: MYR 5,600
+            --Flight Price: MYR 2,500
+
+            --Accommodations Cost: MYR 1,200
+
+            --Meals Cost: MYR 600
+
+            --Transportation Cost: MYR 300
+
+            --Activities Cost: MYR 1,000
+
+            --Total Estimated Cost: MYR 5,600
 
         This estimation is based on a standard budget level and actual prices may vary. It's always recommended to check for the most up-to-date prices and deals on the respective platforms mentioned."""
                 },
