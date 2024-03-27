@@ -32,7 +32,7 @@ def main():
     st.write(f"- Budget Level: {budget_level}")
     st.write(f"- Number of travellers: {num_travellers}")
     st.write(f"- Travel Durations (in days): {duration} days")
-    st.write(f"- Total Estimate Budget: ${total_expenses}$")
+    st.write(f"- Total Estimate Budget: {total_expenses}$")
 
 
 if __name__ == "__main__":

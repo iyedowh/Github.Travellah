@@ -52,16 +52,18 @@ class TravellahMethod:
         response = client.chat.completions.create(
             model='gpt-3.5-turbo',
             max_tokens=1000,
-            temperature=0.5,
+            temperature=1,
             messages= [
                 {
                     "role":"system",
                     "content":"""You are designed to help users estimate the budget and expenses needed for traveling between countries,
-        you will describe the flight price, accommodations cost, meals cost, transportation cost, activities cost, and overall estimated cost."""
+        you will describe the flight price in user's destination currency, accommodations cost in user's destination currency, meals cost in user's destination currency,
+        transportation cost in user's destination currency, activities cost in user's destination currency, and overall estimated cost in user's destination currency.
+        use Times New Roman font to describe the output"""
                 },
                 {
                     "role":"user",
-                    "content": f"""Estimate overall budget to travel from {origin} to {destination} for {num_travelers} travelers for {duration} days
+                    "content": f"""Estimate overall budget in to travel from {origin} to {destination} for {num_travelers} travelers for {duration} days
         with a {budget_level} budget level. You can check flight ticket prices on [Expedia](https://www.expedia.com/). For activities,
         you may explore options on [ContinentHop](https://www.continenthop.com/) and hotel prices on [Booking.com](https://www.booking.com/)."""
                 }
