@@ -22,19 +22,15 @@ def main():
    
     if st.button("Estimate Budget"):
      
-     total_expenses = (origin, destination, num_travellers, duration, budget_level)
+        total_expenses = (origin, destination, num_travellers, duration, budget_level)
 
     st.markdown("## Estimated Budget Details")
 
-    st.write(f"**Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
-    col1 = st.columns(1)
- 
-    with col1:
-            st.write("Travel Details:")
-            st.write(f"- Origin: {origin}")
-            st.write(f"- Destination: {destination}")
-            st.write(f"- Budget Level: {budget_level}")
-            st.write(f"- Travel Durations (in days): {duration}")
+    st.write("Travel Details:")
+    st.write(f"- Origin: {origin}")
+    st.write(f"- Destination: {destination}")
+    st.write(f"- Budget Level: {budget_level}")
+    st.write(f"- Travel Durations (in days): {duration}")
 
     output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
     st.write(output)
