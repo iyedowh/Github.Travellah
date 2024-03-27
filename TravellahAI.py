@@ -10,6 +10,8 @@ client = OpenAI(
 
 def main():
 
+    st.set_page_config(layout="wide", page_title="TRAVELLAH!", page_icon=":Aeroplane:", initial_sidebar_state="expanded", background_color="#BD93D8")
+
     col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
     with col3:
