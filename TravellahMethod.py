@@ -50,10 +50,9 @@ class TravellahMethod:
     "Argentina", "South Korea", "Hungary", "Philippines", "Costa Rica"
     ]  
 
-    def main_program(self, client):
+    def main_program(self, client, origin, destination, num_travelers, duration, budget_level ):
 
         # Main program
-        origin, destination, num_travelers, duration, budget_level = self.get_user_input() 
 
         response = client.chat.completions.create(
             model='gpt-3.5-turbo',
