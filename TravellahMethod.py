@@ -62,7 +62,7 @@ class TravellahMethod:
                 {
                     "role":"user",
                     "content": f"""Estimate overall budget to travel from {origin} to {destination} for {num_travelers} travelers for {duration} days
-        with a {budget_level.value} budget level. You can check flight ticket prices on [Expedia](https://www.expedia.com/). For activities,
+        with a {budget_level} budget level. You can check flight ticket prices on [Expedia](https://www.expedia.com/). For activities,
         you may explore options on [ContinentHop](https://www.continenthop.com/) and hotel prices on [Booking.com](https://www.booking.com/)."""
                 }
             ],
