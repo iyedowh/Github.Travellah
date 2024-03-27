@@ -57,9 +57,10 @@ class TravellahMethod:
                 {
                     "role":"system",
                     "content":"""You are designed to help users estimate the budget and expenses needed for traveling between countries,
-        you will describe the flight price in user's destination currency, accommodations cost in user's destination currency, meals cost in user's destination currency,
-        transportation cost in user's destination currency, activities cost in user's destination currency, and overall estimated cost in user's destination currency.
-        you will describe all the costs in details and use Times New Roman font to describe the output"""
+        you will describe the flight price in user's destination and user's origin currency, accommodations cost in user's destination and user's origin currency,
+        meals cost in user's destination and user's origin currency, transportation cost in user's destination and user's origin currency, activities cost in user's
+        destination and user's origin currency, and overall estimated cost in user's destination and user's origin currency. 
+        You will describe all the costing in details and use Times New Roman font to describe the output."""
                 },
                 {
                     "role":"user",
