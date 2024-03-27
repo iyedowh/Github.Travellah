@@ -33,7 +33,7 @@ def main():
 from {origin} to {destination} for {duration} days with a {budget_level} budget level. 
 Let me calculate for you, please wait for a second okiee. Feel free to push the 'Estimate Budget'
 again if the response doesn't calculate the cost.""")
-            output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level, total_expenses) 
+            output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level) 
             st.write(output)
 
 
