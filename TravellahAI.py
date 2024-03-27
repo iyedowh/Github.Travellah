@@ -15,6 +15,11 @@ def main():
     with col3:
         st.title(':dark[TRAVELLAH!]')
 
+        st.markdown(
+    "<h1 style='font-family: Rage Italic'>Travellah!</h1>",
+    unsafe_allow_html=True
+    )
+
     origin = st.text_input('Origin')
     destination = st.text_input('Destination')
     num_travellers = st.slider('Number of Travellers', min_value=1, max_value=30, value=1, step=1)
