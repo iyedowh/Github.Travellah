@@ -20,8 +20,12 @@ def main():
     'Budget Level?',
     ('Low', 'Standard', 'High'))
    
-    if st.markdown("## Estimated Budget Details"):
+    if st.button("Estimate Budget"):
+     
      total_expenses = (origin, destination, num_travellers, duration, budget_level)
+
+    st.markdown("## Estimated Budget Details")
+    
     st.write(f"**Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
     col1, col2 = st.columns(2)
 
