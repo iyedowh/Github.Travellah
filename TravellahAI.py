@@ -10,12 +10,10 @@ client = OpenAI(
 
 def main():
 
-    st.set_page_config(layout="wide", background_color="#BD93D8")
-
     col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
     with col3:
-        st.title(':purple[TRAVELLAH!]')
+        st.title(':blue[TRAVELLAH!]')
 
     origin = st.text_input('Origin')
     destination = st.text_input('Destination')
