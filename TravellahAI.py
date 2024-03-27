@@ -13,7 +13,7 @@ def main():
     col1, col2, col3, col4, col5 = st.columns([2, 2, 4, 2, 2])  
 
     with col3:
-        st.title(':red[TRAVELLAH!]')
+        st.title(':purple[TRAVELLAH!]')
 
     origin = st.text_input('Origin')
     destination = st.text_input('Destination')
