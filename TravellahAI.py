@@ -14,8 +14,8 @@ def main():
 
     origin = st.text_input('Origin')
     destination = st.text_input('Destination')
-    num_travellers = st.text_input('Number of Travellers')
-    duration = st.text_input('Duration')
+    num_travellers = st.slider('Number of Travellers', min_value=1, max_value=30, value=1, step=1)
+    duration = st.slider('Duration (in days)', min_value=1, max_value=30, value=1, step=1)
     budget_level = st.selectbox(
     'Budget Level?',
     ('Low', 'Standard', 'High'))
