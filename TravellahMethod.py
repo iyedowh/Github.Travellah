@@ -1,16 +1,19 @@
 class TravellahMethod:
                       
-    class BudgetLevel(Enum):
-        LOW = "Low"
-        STANDARD = "Standard"
-        HIGH = "High"
+    def get_user_input(client):
+        budget_level_options = ["low", "standard", "high"]
 
-    def get_user_input(self,client):
-        budget_level_options = list(self.BudgetLevel)
-
+        predefined_origin_options = [
+        "France", "Spain", "Italy", "United States", "China", "Thailand", "United Kingdom",
+        "Mexico", "Turkey", "Germany", "Japan", "Indonesia", "Austria", "Australia", "Vietnam",
+        "Greece", "Portugal", "Canada", "India", "South Africa", "Morocco", "Brazil", "Malaysia",
+        "Singapore", "Czech Republic", "Netherlands", "Switzerland", "Egypt", "Poland", "Croatia",
+        "Dubai", "New Zealand", "Ireland", "Peru", "Sri Lanka", "Dominican Republic", "Iceland",
+        "Argentina", "South Korea", "Hungary", "Philippines", "Costa Rica"
+        ]  
         while True:
             origin = input("Enter origin city or country (or leave blank for predefined options): ")
-            if origin or len(self.predefined_origin_options) > 0:
+            if origin or len(predefined_origin_options) > 0:
                 break
             print("Please enter a valid origin or choose from predefined options (if available).")
 
@@ -41,14 +44,6 @@ class TravellahMethod:
 
         return origin, destination, num_travelers, duration, budget_level 
 
-    predefined_origin_options = [
-    "France", "Spain", "Italy", "United States", "China", "Thailand", "United Kingdom",
-    "Mexico", "Turkey", "Germany", "Japan", "Indonesia", "Austria", "Australia", "Vietnam",
-    "Greece", "Portugal", "Canada", "India", "South Africa", "Morocco", "Brazil", "Malaysia",
-    "Singapore", "Czech Republic", "Netherlands", "Switzerland", "Egypt", "Poland", "Croatia",
-    "Dubai", "New Zealand", "Ireland", "Peru", "Sri Lanka", "Dominican Republic", "Iceland",
-    "Argentina", "South Korea", "Hungary", "Philippines", "Costa Rica"
-    ]  
 
     def main_program(self, client, origin, destination, num_travelers, duration, budget_level ):
 
