@@ -19,13 +19,23 @@ def main():
     budget_level = st.selectbox(
     'Budget Level?',
     ('Low', 'Standard', 'High'))
+   
+    if st.markdown("## Estimated Budget Details"):
+     total_expenses = (origin, destination, num_travellers, duration, budget_level)
+    st.write(f"**Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
+    col1, col2 = st.columns(2)
 
+    with col1:
+            st.write("Travel Details:")
+            st.write(f"- Origin: {origin}")
+            st.write(f"- Destination: {destination}")
+    with col2:
+            st.write("Budget Information:")
+            st.write(f"- Budget Level: {budget_level}")
+            st.write(f"- Total Expenses: ${total_expenses}")
 
-    if st.button("Estimate Budget"):
-        total_expenses = (origin, destination, num_travellers, duration, budget_level)
-        st.write(f"Estimated overall budget for {num_travellers} travelers from {origin} to {destination} for {duration} days with a {budget_level} budget level is: ${total_expenses}")
-        output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level ) 
-        st.write(output)
+            st.write("Here is the breakdown of estimated budget:")
+            st.write(f"Total Expenses: ${total_expenses}", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
