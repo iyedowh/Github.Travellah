@@ -1,22 +1,19 @@
 class TravellahMethod:
-  
-    from enum import Enum  
-  
+                      
     class BudgetLevel(Enum):
-        LOW = 1
-        STANDARD = 2
-        HIGH = 3
+        LOW = "Low"
+        STANDARD = "Standard"
+        HIGH = "High"
 
-    def get_user_input(self, client):
+    def get_user_input(self,client):
         budget_level_options = list(self.BudgetLevel)
 
         while True:
             origin = input("Enter origin city or country (or leave blank for predefined options): ")
-            if origin.strip() == "":
-            print("Using predefined options for origin.")
-            else:
-            print("Origin city or country entered:", origin) 
-  
+            if origin or len(self.predefined_origin_options) > 0:
+                break
+            print("Please enter a valid origin or choose from predefined options (if available).")
+
         while True:
             destination = input("Enter destination city or country: ")
             if destination:
@@ -44,36 +41,38 @@ class TravellahMethod:
 
         return origin, destination, num_travelers, duration, budget_level 
 
-predefined_origin_options = [
+    predefined_origin_options = [
     "France", "Spain", "Italy", "United States", "China", "Thailand", "United Kingdom",
     "Mexico", "Turkey", "Germany", "Japan", "Indonesia", "Austria", "Australia", "Vietnam",
     "Greece", "Portugal", "Canada", "India", "South Africa", "Morocco", "Brazil", "Malaysia",
     "Singapore", "Czech Republic", "Netherlands", "Switzerland", "Egypt", "Poland", "Croatia",
     "Dubai", "New Zealand", "Ireland", "Peru", "Sri Lanka", "Dominican Republic", "Iceland",
     "Argentina", "South Korea", "Hungary", "Philippines", "Costa Rica"
-]  
+    ]  
 
-# Main program
-travellah = TravellahMethod()
-origin, destination, num_travelers, duration, budget_level = travellah.get_user_input(client) 
+    def main_program(self, client):
 
-response = client.chat.completions.create(
-    model='gpt-3.5-turbo',
-    max_tokens=1000,
-    temperature=0.5,
-    messages= [
-        {
-            "role":"system",
-            "content":"""You are designed to help users estimate the budget and expenses needed for traveling between countries,
-you will describe the flight price, accommodations cost, meals cost, transportation cost, activities cost, and overall estimated cost."""
-        },
-        {
-            "role":"user",
-            "content": f"""Estimate overall budget to travel from {origin} to {destination} for {num_travelers} travelers for {duration} days
-with a {budget_level.value} budget level. You can check flight ticket prices on [Expedia](https://www.expedia.com/). For activities,
-you may explore options on [ContinentHop](https://www.continenthop.com/) and hotel prices on [Booking.com](https://www.booking.com/)."""
-        }
-    ],
-)
+        # Main program
+        origin, destination, num_travelers, duration, budget_level = self.get_user_input() 
 
-print(response.choices[0].message.content)
+        response = client.chat.completions.create(
+            model='gpt-3.5-turbo',
+            max_tokens=1000,
+            temperature=0.5,
+            messages= [
+                {
+                    "role":"system",
+                    "content":"""You are designed to help users estimate the budget and expenses needed for traveling between countries,
+        you will describe the flight price, accommodations cost, meals cost, transportation cost, activities cost, and overall estimated cost."""
+                },
+                {
+                    "role":"user",
+                    "content": f"""Estimate overall budget to travel from {origin} to {destination} for {num_travelers} travelers for {duration} days
+        with a {budget_level.value} budget level. You can check flight ticket prices on [Expedia](https://www.expedia.com/). For activities,
+        you may explore options on [ContinentHop](https://www.continenthop.com/) and hotel prices on [Booking.com](https://www.booking.com/)."""
+                }
+            ],
+        )
+
+        return response.choices[0].message.content
+    
