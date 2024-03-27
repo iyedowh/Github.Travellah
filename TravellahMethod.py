@@ -45,7 +45,7 @@ class TravellahMethod:
         return origin, destination, num_travelers, duration, budget_level 
 
 
-    def main_program(self, client, origin, destination, num_travelers, duration, budget_level ):
+    def main_program(client, origin, destination, num_travelers, duration, budget_level ):
 
         # Main program
 
