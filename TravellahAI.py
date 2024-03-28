@@ -1,6 +1,7 @@
 import os
 from openai import OpenAI 
 import datetime
+import time
 import streamlit as st
 from TravellahMethod import TravellahMethod as tm
 
@@ -60,9 +61,15 @@ def main():
 
             st.divider()
 
-            st.write(f"""Estimating overall budget for {num_travellers} travelers
+            with st.spinner("""Estimating overall budget for {num_travellers} travelers
                     from {origin} to {destination} with a {budget_level} budget level. 
-                    Let me calculate for you, please wait for a second okiee.""")
+                    Let me calculate for you, please wait for a second okiee."""):
+                
+                time.sleep(5)
+
+                st.success('Done!')
+
+
             
             st.divider()
 
