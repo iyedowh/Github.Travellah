@@ -68,7 +68,7 @@ def main():
             
             st.divider()
 
-            output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level, date) 
+            output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level) 
 
             st.write(output)
 

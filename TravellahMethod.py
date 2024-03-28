@@ -64,7 +64,7 @@ class TravellahMethod:
 
         Use this format for the output accordingly and neatly:
 
-        Estimated Budget for Traveling from KL, Malaysia to Phuket, Thailand for 3 Travelers for 4 Days (7.12.2024 - 11.12.2024).
+        Estimated Budget for Traveling from KL, Malaysia to Phuket, Thailand for 3 Travelers for 4 Days.
 
         - Flight Price: The flight ticket price from KL, Malaysia to Phuket, Thailand can be checked on Expedia. Let's assume the total cost for 3 travelers is approximately MYR 2,500.
 
