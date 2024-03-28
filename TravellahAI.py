@@ -43,7 +43,7 @@ def main():
         (jan_1, datetime.date(next_year, 1, 7)),
         jan_1,
         dec_31,
-        format="MM.DD.YYYY",
+        format="DD.MM.YYYY",
     )
 
     st.divider()
