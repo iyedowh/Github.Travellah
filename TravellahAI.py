@@ -34,7 +34,7 @@ def main():
     st.divider()
     
     today = datetime.datetime.now()
-    next_year = today.year + 2
+    next_year = today.year + 1
     jan_1 = datetime.date(today, 1, 1)
     dec_31 = datetime.date(next_year, 12, 31)
 
