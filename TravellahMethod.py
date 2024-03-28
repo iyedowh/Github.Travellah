@@ -88,7 +88,7 @@ class TravellahMethod:
 
             --Activities Cost: MYR 1,000 - MYR 1,500
 
-            --Total Estimated Cost: MYR 5,600 - MYR 7,500
+            --Total Estimated Cost: MYR 5,600 - MYR 7,500 (THB 43,123 - THB 57,754)
 
         This estimation is based on a standard budget level and actual prices may vary. It's always recommended to check for the most up-to-date prices and deals on the respective platforms mentioned."""
                 },

@@ -1,6 +1,5 @@
 import os
 from openai import OpenAI 
-from enum import Enum
 import streamlit as st
 from TravellahMethod import TravellahMethod as tm
 
@@ -25,6 +24,8 @@ def main():
 
         st.caption("""This app is designed to revolutionize the way users estimate budgets and expenses for 
                       international travel.""") 
+        
+    st.caption("<h1 style='text-align: center;'>aThis app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
 
     origin = st.text_input('Origin (City,Country)')
     destination = st.text_input('Destination (City,Country)')
@@ -35,11 +36,15 @@ def main():
     ('Low', 'Standard', 'High'))
    
     if st.button("Estimate Budget"):
+            
             total_expenses = (origin, destination, num_travellers, duration, budget_level)
+
             st.write(f"""Estimating overall budget for {num_travellers} travelers
-from {origin} to {destination} for {duration} days with a {budget_level} budget level. 
-Let me calculate for you, please wait for a second okiee.""")
+                    from {origin} to {destination} for {duration} days with a {budget_level} budget level. 
+                    Let me calculate for you, please wait for a second okiee.""")
+            
             output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level) 
+
             st.write(output)
 
 
