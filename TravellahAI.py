@@ -18,6 +18,13 @@ def main():
     "<h1 style='font-family: Rage Italic'>Travellah!</h1>",
     unsafe_allow_html=True
     )
+        
+    col1, col2, col3 = st.columns([2, 7, 2]) 
+
+    with col2:
+
+        st.caption("""This app is designed to revolutionize the way users estimate budgets and expenses for 
+                      international travel.""") 
 
     origin = st.text_input('Origin (City,Country)')
     destination = st.text_input('Destination (City,Country)')
