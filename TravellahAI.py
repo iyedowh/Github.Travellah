@@ -14,18 +14,11 @@ def main():
     with col3:
 
         st.markdown(
-    "<h1 style='font-family: Rage Italic'>Travellah!</h1>",
+    "<h1 style='font-family: Rage Italic; text-align: center;'>Travellah!</h1>",
     unsafe_allow_html=True
     )
         
-    col1, col2, col3 = st.columns([2, 7, 2]) 
-
-    with col2:
-
-        st.caption("""This app is designed to revolutionize the way users estimate budgets and expenses for 
-                      international travel.""") 
-        
-    st.caption("<h1 style='text-align: center;'>aThis app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
+    st.caption("<h1 style='text-align: center;'>This app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
 
     origin = st.text_input('Origin (City,Country)')
     destination = st.text_input('Destination (City,Country)')
