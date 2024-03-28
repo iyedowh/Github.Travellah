@@ -18,7 +18,7 @@ def main():
     unsafe_allow_html=True
     )
         
-    st.caption("<h1 style='text-align: center;'>This app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
+    st.caption("<h1 style='font-family: Rage Italic; text-align: center;'>This app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
 
     origin = st.text_input('Origin (City,Country)')
     destination = st.text_input('Destination (City,Country)')
