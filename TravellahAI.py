@@ -59,7 +59,7 @@ def main():
             total_expenses = (origin, destination, num_travellers, duration, budget_level)
 
             st.write(f"""Estimating overall budget for {num_travellers} travelers
-                    from {origin} to {destination} with a {budget_level} budget level on {date}. 
+                    from {origin} to {destination} with a {budget_level} budget level. 
                     Let me calculate for you, please wait for a second okiee.""")
             
             st.divider()
