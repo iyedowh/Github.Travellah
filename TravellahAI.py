@@ -61,15 +61,13 @@ def main():
 
             st.divider()
 
-            with st.spinner("""Estimating overall budget for {num_travellers} travelers
+            with st.spinner(f"""Estimating overall budget for {num_travellers} travelers
                     from {origin} to {destination} with a {budget_level} budget level. 
                     Let me calculate for you, please wait for a second okiee."""):
                 
-                time.sleep(5)
-
+                time.sleep(10)
+                
                 st.success('Done!')
-
-
             
             st.divider()
 
