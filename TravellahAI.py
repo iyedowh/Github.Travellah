@@ -65,9 +65,11 @@ def main():
                     from {origin} to {destination} with a {budget_level} budget level. 
                     Let me calculate for you, please wait for a second okiee."""):
                 
-
+                time.sleep(5)
+                
+                st.success('Estimating......')
             
-                st.divider()
+            st.divider()
 
             output= tm.main_program(client, origin, destination, num_travellers, duration, budget_level) 
 
