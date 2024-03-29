@@ -78,17 +78,17 @@ class TravellahMethod:
 
         - Adding up all the estimated costs:
 
-            - Flight Price: MYR 2,500 - MYR 3,000
+            - Flight Price: MYR 2,500 to MYR 3,000
 
-            - Accommodations Cost: MYR 1,200 - MYR 2,500
+            - Accommodations Cost: MYR 1,200 to MYR 2,500
 
             - Meals Cost: MYR 600 - MYR 800
 
-            - Transportation Cost: MYR 300 - MYR 500
+            - Transportation Cost: MYR 300 to MYR 500
 
-            - Activities Cost: MYR 1,000 - MYR 1,500
+            - Activities Cost: MYR 1,000 to MYR 1,500
 
-            - Total Estimated Cost: MYR 5,600 - MYR 7,500 (THB 43,123 - THB 57,754)
+            - Total Estimated Cost: MYR 5,600 to MYR 7,500 (THB 43,123 to THB 57,754)
 
         This estimation is based on a standard budget level and actual prices may vary. It's always recommended to check for the most up-to-date prices and deals on the respective platforms mentioned."""
                 },
