@@ -65,9 +65,9 @@ def main():
                     from {origin} to {destination} with a {budget_level} budget level. 
                     Let me calculate for you, please wait for a second okiee."""):
                 
-                time.sleep(5)
+                time.sleep(7)
                 
-                st.success('Almost done..')
+                st.success('Almost done...')
             
             st.divider()
 
