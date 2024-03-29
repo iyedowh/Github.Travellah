@@ -67,7 +67,7 @@ def main():
                 
                 time.sleep(5)
                 
-                st.success('Estimating......')
+                st.success('Almost done..')
             
             st.divider()
 
