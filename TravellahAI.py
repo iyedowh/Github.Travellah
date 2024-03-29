@@ -22,15 +22,15 @@ def main():
 
     st.divider()
 
-    origin = st.text_input('Origin 🏡 (City,Country)')
+    origin = st.text_input('Origin ⚲ (City,Country)')
 
     st.divider()
 
-    destination = st.text_input('Destination ✈️ (City,Country)')
+    destination = st.text_input('Destination ✈︎ (City,Country)')
 
     st.divider()
 
-    num_travellers = st.slider('Number of Travellers 👨‍👩‍👦‍👦', min_value=1, max_value=30, value=1, step=1)
+    num_travellers = st.slider('Number of Travellers 𓀙𓀙𓀙', min_value=1, max_value=30, value=1, step=1)
 
     st.divider()
     
@@ -40,7 +40,7 @@ def main():
     dec_31 = datetime.date(next_year, 12, 31)
 
     duration = st.date_input(
-        "Select your travelling time 🕒 ",
+        "Select your travelling date 🗓 ",
         (jan_1, datetime.date(next_year, 1, 7)),
         jan_1,
         dec_31,
@@ -50,7 +50,7 @@ def main():
     st.divider()
 
     budget_level = st.selectbox(
-    'Budget Level 💰',
+    'Budget Level 💸 ',
     ('Low', 'Standard', 'High'))
 
     st.divider()
@@ -63,7 +63,7 @@ def main():
 
             with st.spinner(f"""Estimating overall budget for {num_travellers} travelers
                     from {origin} to {destination} with a {budget_level} budget level. 
-                    Let me calculate for you, please wait for a second okieee🧐."""):
+                    Let me calculate for you, please wait for a second okieee 🧐"""):
                 
                 time.sleep(7)
                 
