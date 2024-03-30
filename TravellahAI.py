@@ -18,7 +18,7 @@ def main():
 
     st.divider()
 
-    st.caption("<h1 style='font-family: Rage Italic; text-align: center;'>𝐵𝓊𝒹𝑔𝑒𝓉 𝒟𝑜𝑒𝓈𝓃'𝓉 𝐵𝒾𝓉𝑒,\n𝐸𝓍𝓅𝓁𝑜𝓇𝑒 𝓌𝒾𝓉𝒽 𝒟𝑒𝓁𝒾𝑔𝒽𝓉</h1>", unsafe_allow_html=True)
+    st.caption("<h1 style='font-family: Rage Italic; text-align: center;'>𝐵𝓊𝒹𝑔𝑒𝓉 𝒟𝑜𝑒𝓈𝓃'𝓉 𝐵𝒾𝓉𝑒,<br>𝐸𝓍𝓅𝓁𝑜𝓇𝑒 𝓌𝒾𝓉𝒽 𝒟𝑒𝓁𝒾𝑔𝒽𝓉</h1>", unsafe_allow_html=True)
 
     st.divider()
 
