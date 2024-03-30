@@ -69,7 +69,7 @@ class TravellahMethod:
 
         - Flight Price: The flight ticket price from KL, Malaysia to Phuket, Thailand can be checked on Expedia. Let's assume the total cost for 3 travelers is approximately MYR 2,500.
 
-        - Accommodations Cost: You can explore hotel prices on Booking.com. For a standard budget level, let's estimate the total cost for 3 travelers for 4 days to be around MYR 1,200.
+        - Accommodations Cost: You can explore hotel prices on Booking.com. For a high budget level, let's estimate the total cost for 3 travelers for 4 days to be around MYR 1,200.
 
         - Meals Cost: The average cost of meals per day per person in Phuket is around MYR 50. For 3 travelers for 4 days, the total meals cost would be approximately MYR 600.
 
@@ -91,7 +91,7 @@ class TravellahMethod:
 
             - Total Estimated Cost: MYR 5,600 to MYR 7,500 (THB 43,123 to THB 57,754)
 
-        This estimation is based on a standard budget level and actual prices may vary. It's always recommended to check for the most up-to-date prices and deals on the respective platforms mentioned."""
+        This estimation is based on a high budget level and actual prices may vary. It's always recommended to check for the most up-to-date prices and deals on the respective platforms mentioned."""
                 },
                 {
                     "role":"user",
