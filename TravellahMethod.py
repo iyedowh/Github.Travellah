@@ -61,6 +61,7 @@ class TravellahMethod:
         meals cost in user's origin currency, transportation cost in user's origin currency, activities cost in user's
         destination and user's origin currency, and overall estimated cost in user's origin currency. 
         You will describe all the costing in details and use Times New Roman font to describe the output.
+        If the budget is low, make sure the cost is really affordable.
 
         Use this format for the output accordingly and neatly:
 

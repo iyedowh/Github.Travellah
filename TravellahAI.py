@@ -18,7 +18,7 @@ def main():
 
     st.divider()
 
-    st.caption("<h1 style='font-family: Rage Italic; text-align: center;'>This app is designed to revolutionize the way users estimate budgets and expenses for international travel.</h1>", unsafe_allow_html=True)
+    st.caption("<h1 style='font-family: Rage Italic; text-align: center;'>𝒯𝓇𝒶𝓋𝑒𝓁 𝒮𝓂𝒶𝓇𝓉𝑒𝓇, 𝒩𝑜𝓉 𝐻𝒶𝓇𝒹𝑒𝓇</h1>", unsafe_allow_html=True)
 
     st.divider()
 
@@ -67,7 +67,7 @@ def main():
                 
                 time.sleep(7)
                 
-                st.success('Almost done 🧐')
+                st.success('Almost done...')
             
             st.divider()
 
